@@ -12,10 +12,9 @@ public class ClienteRepository {
     private final ConcurrentHashMap<String, Cliente> clienteMap = new ConcurrentHashMap<>();
 
     public ClienteRepository() {
-        
-        save(new Cliente("Carlos López", "carlos@example.com", "123456789"));
-        save(new Cliente("Ana Torres", "ana@example.com", "987654321"));
-        save(new Cliente("Luis Mejía", "luis@example.com", "555123456"));
+        save(new Cliente("1", "Carlos López", "carlos@example.com", "123456789"));
+        save(new Cliente("2", "Ana Torres", "ana@example.com", "987654321"));
+        save(new Cliente("3", "Luis Mejía", "luis@example.com", "555123456"));
     }
 
     public Cliente save(Cliente cliente) {

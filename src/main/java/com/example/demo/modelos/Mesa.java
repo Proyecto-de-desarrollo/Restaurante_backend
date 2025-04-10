@@ -7,37 +7,26 @@ public class Mesa {
     private int numero;
     private int capacidad;
 
-    public Mesa() {
-        this.id = UUID.randomUUID().toString();
+    // Constructor con ID fijo
+    public Mesa(String id, int numero, int capacidad) {
+        this.id = id;
+        this.numero = numero;
+        this.capacidad = capacidad;
     }
 
+    // Constructor con ID aleatorio
     public Mesa(int numero, int capacidad) {
         this.id = UUID.randomUUID().toString();
         this.numero = numero;
         this.capacidad = capacidad;
     }
 
-    public String getId() {
-        return id;
-    }
+    public Mesa() {}
 
-    public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
-    public int getCapacidad() {
-        return capacidad;
-    }
-
-    public void setCapacidad(int capacidad) {
-        this.capacidad = capacidad;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
+    public int getNumero() { return numero; }
+    public void setNumero(int numero) { this.numero = numero; }
+    public int getCapacidad() { return capacidad; }
+    public void setCapacidad(int capacidad) { this.capacidad = capacidad; }
 }

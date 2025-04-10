@@ -8,6 +8,15 @@ public class Cliente {
     private String email;
     private String telefono;
 
+    // Constructor con ID fijo
+    public Cliente(String id, String nombre, String email, String telefono) {
+        this.id = id;
+        this.nombre = nombre;
+        this.email = email;
+        this.telefono = telefono;
+    }
+
+    // Constructor con ID aleatorio
     public Cliente(String nombre, String email, String telefono) {
         this.id = UUID.randomUUID().toString();
         this.nombre = nombre;
@@ -27,5 +36,3 @@ public class Cliente {
     public String getTelefono() { return telefono; }
     public void setTelefono(String telefono) { this.telefono = telefono; }
 }
-
-

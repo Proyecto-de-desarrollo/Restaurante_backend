@@ -8,10 +8,15 @@ public class Pedido {
     private String mesaId;
     private String descripcion;
 
-    public Pedido() {
-        this.id = UUID.randomUUID().toString();
+    // Constructor con ID fijo
+    public Pedido(String id, String clienteId, String mesaId, String descripcion) {
+        this.id = id;
+        this.clienteId = clienteId;
+        this.mesaId = mesaId;
+        this.descripcion = descripcion;
     }
 
+    // Constructor con ID aleatorio
     public Pedido(String clienteId, String mesaId, String descripcion) {
         this.id = UUID.randomUUID().toString();
         this.clienteId = clienteId;
@@ -19,7 +24,8 @@ public class Pedido {
         this.descripcion = descripcion;
     }
 
-    // Getters y Setters
+    public Pedido() {}
+
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
     public String getClienteId() { return clienteId; }
@@ -29,4 +35,3 @@ public class Pedido {
     public String getDescripcion() { return descripcion; }
     public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
 }
-
