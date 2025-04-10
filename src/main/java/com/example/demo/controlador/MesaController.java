@@ -1,11 +1,12 @@
-package controlador;
+package com.example.demo.controlador;
 
-import modelos.Mesa;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import servicios.MesaService;
+
+import com.example.demo.modelos.Mesa;
+import com.example.demo.serivicios.MesaService;
 
 import java.util.List;
 

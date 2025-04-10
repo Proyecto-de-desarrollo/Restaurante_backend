@@ -1,11 +1,12 @@
-package controlador;
+package com.example.demo.controlador;
 
-import modelos.Pedido;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import servicios.PedidoService;
+
+import com.example.demo.modelos.Pedido;
+import com.example.demo.serivicios.PedidoService;
 
 import java.util.List;
 

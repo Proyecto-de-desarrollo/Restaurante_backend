@@ -1,10 +1,9 @@
-package Api;
-
+package com.example.demo.Api;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class RetrofitClient {
-    private static final String BASE_URL = "http://localhost:8080/";
+public class ApiCliente {
+    private static final String BASE_URL = "http://localhost:8080/api/";
     private static Retrofit retrofit;
 
     public static Retrofit getClient() {

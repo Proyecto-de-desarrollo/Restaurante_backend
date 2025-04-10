@@ -1,7 +1,8 @@
-package repositorio;
+package com.example.demo.repositorio;
 
-import modelos.Mesa;
 import org.springframework.stereotype.Repository;
+
+import com.example.demo.modelos.Mesa;
 
 import java.util.ArrayList;
 import java.util.List;

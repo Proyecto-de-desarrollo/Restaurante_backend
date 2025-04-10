@@ -1,10 +1,11 @@
 
-package Api;// ClienteApi.java
-import modelos.Cliente;
+package com.example.demo.Api;// ClienteApi.java
 import retrofit2.Call;
 import retrofit2.http.*;
 
 import java.util.List;
+
+import com.example.demo.modelos.Cliente;
 
 public interface ClienteApi {
     @GET("clientes")

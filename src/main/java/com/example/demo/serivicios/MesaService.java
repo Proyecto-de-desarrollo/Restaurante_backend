@@ -1,8 +1,9 @@
-package servicios;
+package com.example.demo.serivicios;
 
-import modelos.Mesa;
 import org.springframework.stereotype.Service;
-import repositorio.MesaRepository;
+
+import com.example.demo.modelos.Mesa;
+import com.example.demo.repositorio.MesaRepository;
 
 import java.util.List;
 

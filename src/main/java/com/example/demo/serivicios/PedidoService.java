@@ -1,9 +1,10 @@
-package servicios;
+package com.example.demo.serivicios;
 
-import modelos.Pedido;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repositorio.PedidoRepository;
+
+import com.example.demo.modelos.Pedido;
+import com.example.demo.repositorio.PedidoRepository;
 
 import java.util.List;
 

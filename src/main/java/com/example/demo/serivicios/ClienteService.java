@@ -1,12 +1,12 @@
-package servicios;
+package com.example.demo.serivicios;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import modelos.Cliente;
-import repositorio.ClienteRepository;
+import com.example.demo.modelos.Cliente;
+import com.example.demo.repositorio.ClienteRepository;
 
 @Service
 public class ClienteService {
