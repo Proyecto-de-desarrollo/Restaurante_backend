@@ -1,9 +1,12 @@
-package com.example.demo;
+package servicios;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import modelos.Cliente;
+import repositorio.ClienteRepository;
 
 @Service
 public class ClienteService {

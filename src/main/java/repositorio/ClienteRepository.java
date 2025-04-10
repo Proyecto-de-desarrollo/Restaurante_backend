@@ -1,6 +1,8 @@
-package com.example.demo;
+package repositorio;
 
 import org.springframework.stereotype.Repository;
+
+import modelos.Cliente;
 
 import java.util.ArrayList;
 import java.util.List;

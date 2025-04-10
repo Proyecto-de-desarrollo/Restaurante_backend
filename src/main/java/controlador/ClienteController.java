@@ -1,4 +1,4 @@
-package com.example.demo;
+package controlador;
 
 import java.util.List;
 
@@ -12,6 +12,8 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import modelos.Cliente;
+import servicios.ClienteService;
 
 @RestController
 @RequestMapping("/api/clientes")
