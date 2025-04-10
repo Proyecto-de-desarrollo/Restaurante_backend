@@ -13,13 +13,6 @@ public class MesaService {
 
     public MesaService(MesaRepository mesaRepository) {
         this.mesaRepository = mesaRepository;
-        initSampleData();
-    }
-
-    private void initSampleData() {
-        save(new Mesa(1, 4));
-        save(new Mesa(2, 2));
-        save(new Mesa(3, 6));
     }
 
     public Mesa save(Mesa mesa) {

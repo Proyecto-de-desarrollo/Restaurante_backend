@@ -15,16 +15,6 @@ public class ClienteService {
     @Autowired
     public ClienteService(ClienteRepository clienteRepository) {
         this.clienteRepository = clienteRepository;
-        initSampleData();
-    }
-
-    private void initSampleData() {
-    	Cliente ana = new Cliente("Ana Torres", "ana@example.com", "123456789");
-        Cliente luis = new Cliente("Luis Gómez", "luis@example.com", "987654321");
-        Cliente sofia = new Cliente("Sofía Méndez", "sofia@example.com", "555666777");
-        save(ana);
-        save(luis);
-        save(sofia);
     }
 
     public Cliente save(Cliente cliente) {

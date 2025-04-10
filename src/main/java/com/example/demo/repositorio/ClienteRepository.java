@@ -1,7 +1,6 @@
 package com.example.demo.repositorio;
 
 import org.springframework.stereotype.Repository;
-
 import com.example.demo.modelos.Cliente;
 
 import java.util.ArrayList;
@@ -11,6 +10,13 @@ import java.util.concurrent.ConcurrentHashMap;
 @Repository
 public class ClienteRepository {
     private final ConcurrentHashMap<String, Cliente> clienteMap = new ConcurrentHashMap<>();
+
+    public ClienteRepository() {
+        
+        save(new Cliente("Carlos López", "carlos@example.com", "123456789"));
+        save(new Cliente("Ana Torres", "ana@example.com", "987654321"));
+        save(new Cliente("Luis Mejía", "luis@example.com", "555123456"));
+    }
 
     public Cliente save(Cliente cliente) {
         clienteMap.put(cliente.getId(), cliente);
@@ -47,5 +53,12 @@ public class ClienteRepository {
             }
         }
         return resultados;
+    }
+
+    public List<Cliente> saveAll(List<Cliente> clientes) {
+        for (Cliente cliente : clientes) {
+            save(cliente);
+        }
+        return clientes;
     }
 }
