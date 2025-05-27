@@ -12,6 +12,8 @@ public class PedidoDTO {
         this.userId = userId;
         this.mesaId = mesaId;
         this.descripcion = descripcion;
+
+        
     }
 
     public Integer getUserId() { return userId; }
