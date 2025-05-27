@@ -31,7 +31,7 @@ public class UsuarioController {
         this.usuarioService = usuarioService;
         this.jwtService = jwtService;
 
-        
+
     }
 
     @GetMapping
