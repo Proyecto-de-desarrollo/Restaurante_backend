@@ -22,7 +22,7 @@ public class LoginResposeDTO {
     public Usuario getUsuario() {
         return usuario;
 
-        
+
     }
 
     public void setUsuario(Usuario usuario) {
