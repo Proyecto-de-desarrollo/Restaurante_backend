@@ -26,7 +26,7 @@ public class PedidoController {
         this.pedidoService = pedidoService;
         this.jwtService = jwtService;
 
-        
+
     }
 
     @GetMapping
