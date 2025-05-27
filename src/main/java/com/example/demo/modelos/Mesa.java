@@ -34,6 +34,8 @@ public class Mesa {
     public Integer getId() { return id; }
     public void setId(Integer id) { this.id = id; }
 
+
+    
     public int getNumero() { return numero; }
     public void setNumero(int numero) { this.numero = numero; }
 
