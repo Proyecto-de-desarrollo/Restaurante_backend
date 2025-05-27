@@ -30,6 +30,8 @@ public class UsuarioController {
     public UsuarioController(UsuarioService usuarioService, JwtService jwtService) {
         this.usuarioService = usuarioService;
         this.jwtService = jwtService;
+
+        
     }
 
     @GetMapping

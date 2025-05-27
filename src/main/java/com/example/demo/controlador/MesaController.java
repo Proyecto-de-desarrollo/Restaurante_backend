@@ -26,7 +26,7 @@ public class MesaController {
     public MesaController(MesaService mesaService, JwtService jwtService) {
         this.jwtService = jwtService;
         this.mesaService = mesaService;
-        
+
     }
 
     @GetMapping
