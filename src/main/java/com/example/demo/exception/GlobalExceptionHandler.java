@@ -12,17 +12,21 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String> handleInvalidPasswordException(InvalidPasswordException ex) {
         String errorMessage = ex.getMessage();
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorMessage);
+
     }
 
     @ExceptionHandler(InvalidUsernameException.class)
     public ResponseEntity<String> handleInvalidUsernameException(InvalidUsernameException ex) {
         String errorMessage = ex.getMessage();
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorMessage);
+
     }
 
     @ExceptionHandler(NotFoundException.class)
     public ResponseEntity<String> handleNotFoundException(NotFoundException ex) {
         String errorMessage = ex.getMessage();
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorMessage);
+
     }
+
 }
